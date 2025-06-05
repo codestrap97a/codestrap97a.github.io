@@ -1,620 +1,480 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
 
-    <title>Abolfazl Saberi</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Codestrap, Abolfazl Saberi">
+  <meta name="description" content="Portfolio site for ASP.NET Backend Developer">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-[#131520] dark group/design-root overflow-x-hidden"
-      style="font-family: Inter, 'Noto Sans', sans-serif"
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <header
-          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#282d43] px-10 py-3"
-        >
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2
-              class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
-            >
-              Codestrap
-            </h2>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+  <title>CODESTRAP</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#131520] dark group/design-root overflow-x-hidden"
+    style="font-family: Inter, 'Noto Sans', sans-serif">
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#282d43] px-10 py-3">
+        <div class="flex items-center gap-4 text-white">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                fill="currentColor"></path>
+            </svg>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a
-                class="text-white text-sm font-medium leading-normal hover:underline"
-                href="#projects"
-                >Projects</a
-              >
-              <a
-                class="text-white text-sm font-medium leading-normal hover:underline"
-                href="#skills"
-                >Skills</a
-              >
-            </div>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+            Codestrap
+          </h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-white text-sm font-medium leading-normal hover:underline" href="#projects">Projects</a>
+            <a class="text-white text-sm font-medium leading-normal hover:underline" href="#skills">Skills</a>
           </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div
-            class="layout-content-container flex flex-col max-w-[960px] flex-1"
-          >
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 items-center">
-                <div class="flex gap-4 flex-col items-center">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDO5_qzAldYkJcbGy5COO_puoEglpAVxulQD8W9KY9X9TGkNuVr-I9p3mYXzZ6NIK0MquGuHuJFIUrEw9LI39w97r8hmT7ZOLXQDrb7dEHUEGSsSsgCZeLOLYAnAsquj-Oc6DT1YtYfXz33lCctIhl3EF14R7vlTPU_259rcnssftLJAYPyKBLpyRLCkGydZxbnbftUVGt8DszHao5szgG6j8S4DP8EbyLU9TkcsHQfer2triPVcvDP5HiINgEjKRWUzx1Xvj2KNTE');
-                    "
-                  ></div>
-                  <div
-                    class="flex flex-col items-center justify-center justify-center"
-                  >
-                    <p
-                      class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"
-                    >
-                      Abolfazl Saberi
-                    </p>
-                    <p
-                      class="text-[#99a0c2] text-base font-normal leading-normal text-center"
-                    >
-                      ASP.NET Backend Developer
-                    </p>
-                    <p
-                      class="text-[#99a0c2] text-base font-normal leading-normal text-center"
-                    >
-                      Experienced in building scalable and efficient backend
-                      systems using ASP.NET. Passionate about clean code and
-                      innovative solutions.
-                    </p>
-                  </div>
+        </div>
+      </header>
+      <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="flex p-4 @container">
+            <div class="flex w-full flex-col gap-4 items-center">
+              <div class="flex gap-4 flex-col items-center">
+                <div class=" bg-no-repeat aspect-square bg-contain bg-center rounded-3  min-h-36 w-32" style="
+                      background-image: url(/assets/images/Portfolio-Profile.jpg);
+                    "></div>
+                <div class="flex flex-col items-center justify-center justify-center">
+                  <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+                    Abolfazl Saberi
+                  </p>
+                  <p class="text-[#99a0c2] text-base font-normal leading-normal text-center">
+                    ASP.NET Backend Developer
+                  </p>
+                  <p class="text-[#99a0c2] text-base font-normal leading-normal text-center">
+                    Experienced in building scalable and efficient backend
+                    systems using ASP.NET. Passionate about clean code and
+                    innovative solutions.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="flex justify-center">
-              <div
-                class="flex flex-1 gap-3 flex-wrap px-4 py-3 max-w-[480px] justify-center"
-              >
-                <a  href="#education">
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-12 bg-[#282d43] text-white text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-white hover:text-[#282d43]"
-                  >
-                   <span class="truncate">Education</span>
-                  </button>
-                </a>
-                <a href="#social">
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-12 bg-[#eaedfa] text-[#131520] text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-[#282d43] hover:text-white"
-                  >
-                   <span class="truncate">Contact</span>
-                  </button>
-                </a>
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 max-w-[480px] justify-center">
+              <a href="#education">
+                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-12 bg-[#282d43] text-white text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-white hover:text-[#282d43]
+                     ">
+                  <span class="truncate">Education</span>
+                </button>
+              </a>
+              <a href="#social">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-12 bg-[#eaedfa] text-[#131520] text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-[#282d43] hover:text-white">
+                  <span class="truncate">Contact</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="flex px-4 py-3 justify-center ">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#eaedfa] text-[#131520] gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em] ">
+              <div class="text-[#131520]" data-icon="DownloadSimple" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M224,152v56a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V152a8,8,0,0,1,16,0v56H208V152a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,132.69V40a8,8,0,0,0-16,0v92.69L93.66,106.34a8,8,0,0,0-11.32,11.32Z">
+                  </path>
+                </svg>
               </div>
-            </div>
-            <div class="flex px-4 py-3 justify-center ">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#eaedfa] text-[#131520] gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em] "
-              >
-                <div
-                  class="text-[#131520]"
-                  data-icon="DownloadSimple"
-                  data-size="20px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M224,152v56a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V152a8,8,0,0,1,16,0v56H208V152a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,132.69V40a8,8,0,0,0-16,0v92.69L93.66,106.34a8,8,0,0,0-11.32,11.32Z"
-                    ></path>
-                  </svg>
-                </div>
-                <span class="truncate">Resume</span>
-              </button>
-            </div>
+              <span class="truncate">Resume</span>
+            </button>
+          </div>
 
-            <div class="p-4">
-              <div
-                class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl pt-[132px]"
-                style="
+          <div class="p-4">
+            <div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl pt-[132px]" style="
                   background-image: linear-gradient(
                     0deg,
                     #282d43 0%,
                     rgba(154, 119, 119, 0) 100%
                   );
-                "
-              >
-                <div class="flex w-full justify-between gap-4 p-4">
-                  <div class="flex max-w-[840px] flex-1 flex-col gap-1">
-                    <p
-                      class="text-white text-justify tracking-light text-2xl font-bold leading-tight max-w-[840px]"
-                    >
-                      "Imagination is more important than knowledge. For
-                      knowledge is limited to all we now know and understand,
-                      while imagination embraces the entire world, and all there
-                      ever will be to know and understand"
-                    </p>
-                    <p class="text-white text-base font-medium leading-normal pt-6">
-                      - Albert Einstein
-                    </p>
-                  </div>
+                ">
+              <div class="flex w-full justify-between gap-4 p-4">
+                <div class="flex max-w-[840px] flex-1 flex-col gap-1">
+                  <p class="text-white text-justify tracking-light text-2xl font-bold leading-tight max-w-[840px]">
+                    "Imagination is more important than knowledge. For
+                    knowledge is limited to all we now know and understand,
+                    while imagination embraces the entire world, and all there
+                    ever will be to know and understand"
+                  </p>
+                  <p class="text-white text-base font-medium leading-normal pt-6">
+                    - Albert Einstein
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <h2
+            class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            id="skills">
+            Skills
+          </h2>
+          <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
+            Backend
+          </h3>
+          <div class="p-5 grid grid-cols-2">
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                ASP.NET
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                C#
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                SQL Server
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                REST APIs
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Microservices
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">★★★</p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Azure
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">★★★</p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Git
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Agile
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Software Architecture
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">★★★</p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                System Design
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">★★★</p>
+            </div>
+          </div>
+          <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
+            Frontend
+          </h3>
+          <div class="p-4 grid grid-cols-2">
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                .NET Blazor
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">★★★</p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Blazor WebAssembly
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">★★★</p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                HTML
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★
+              </p>
+            </div>
+            <div class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                CSS
+              </p>
+              <p class="text-white text-sm font-normal leading-normal">
+                ★★★★
+              </p>
+            </div>
+          </div>
+          <h2 id="education"
+            class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Education
+          </h2>
+          <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Hakim Sabzevari University
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Bachelor of Science in Computer Engineering (2017-2021)
+              </p>
+            </div>
+          </div>
+
+          <h2 id="Working Experience"
+            class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Working Experience
+          </h2>
+          <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Kavosh Afzar Farda
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Technical support specialist (Dec 2023-Present)
+              </p>
+
+            </div>
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Topis company
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Technician/Unix Admin (Sep 2022-Jul 2023)
+              </p>
             </div>
 
-            <h2
-              class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-              id="skills"
-            >
-              Skills
-            </h2>
-            <h3
-              class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4"
-            >
-              Backend
-            </h3>
-            <div class="p-5 grid grid-cols-2">
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  ASP.NET
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  C#
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  SQL Server
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  REST APIs
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Microservices
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">★★★</p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Azure
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">★★★</p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Git
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Agile
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Software Architecture
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">★★★</p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  System Design
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">★★★</p>
-              </div>
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Freelance programmer
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Freelancing (2018-Present)
+              </p>
             </div>
-            <h3
-              class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4"
-            >
-              Frontend
-            </h3>
-            <div class="p-4 grid grid-cols-2">
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  .NET Blazor
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">★★★</p>
+
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Tech Translator
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Translating Tech Stuff (May 2022-Present)
+              </p>
+            </div>
+          </div>
+          <h2
+            class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Languages
+          </h2>
+          <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                Persian
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Native Speaker
+              </p>
+            </div>
+            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5">
+              <p class="text-[#99a0c2] text-sm font-normal leading-normal">
+                English
+              </p>
+              <p class="text-white text-sm font-normal leading-normal justify-self-end">
+                Professional Proficiency
+              </p>
+            </div>
+          </div>
+          <h2
+            class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Projects
+          </h2>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4" id="projects">
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#394060] bg-[#1d2030] p-4 flex-col">
+              <div class="text-white" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                  </path>
+                </svg>
               </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
+              <div class="flex flex-col gap-1">
+                <h2 class="text-white text-base font-bold leading-tight">
+                  Project Alpha
+                </h2>
                 <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Blazor WebAssembly
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">★★★</p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pr-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  HTML
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★
-                </p>
-              </div>
-              <div
-                class="flex flex-row justify-between gap-1 border-t border-solid border-t-[#394060] py-4 pl-2"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  CSS
-                </p>
-                <p class="text-white text-sm font-normal leading-normal">
-                  ★★★★
+                  A robust backend system for e-commerce platforms, built with
+                  ASP.NET Core and C#.
                 </p>
               </div>
             </div>
-            <h2
-               id="education"
-              class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-           >
-              Education
-            </h2>
-            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
-              <div
-                class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5"
-              >
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#394060] bg-[#1d2030] p-4 flex-col">
+              <div class="text-white" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-white text-base font-bold leading-tight">
+                  Project Beta
+                </h2>
                 <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Hakim Sabzevari University
-                </p>
-                <p class="text-white text-sm font-normal leading-normal justify-self-end">
-                  Bachelor of Science in Computer Engineering (2017-2021)
+                  A microservices architecture project using Azure services
+                  for scalability and resilience.
                 </p>
               </div>
             </div>
-            <h2
-              class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              Languages
-            </h2>
-            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
-              <div
-                class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5"
-              >
-                <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  Persian
-                </p>
-                <p class="text-white text-sm font-normal leading-normal justify-self-end">
-                  Native Speaker
-                </p>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#394060] bg-[#1d2030] p-4 flex-col">
+              <div class="text-white" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                  </path>
+                </svg>
               </div>
-              <div
-                class="col-span-2 grid grid-cols-subgrid border-t border-t-[#394060] py-5"
-              >
+              <div class="flex flex-col gap-1">
+                <h2 class="text-white text-base font-bold leading-tight">
+                  Project Gamma
+                </h2>
                 <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                  English
-                </p>
-                <p class="text-white text-sm font-normal leading-normal justify-self-end">
-                  Professional Proficiency
+                  A RESTful API project for a social media application,
+                  focusing on performance and security.
                 </p>
               </div>
             </div>
-            <h2
-              class="flex items-center justify-center mt-16 text-white text-[32px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              Projects
-            </h2>
-            <div
-              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
-              id="projects"
-            >
-              <div
-                class="flex flex-1 gap-3 rounded-lg border border-[#394060] bg-[#1d2030] p-4 flex-col"
-              >
-                <div
-                  class="text-white"
-                  data-icon="GithubLogo"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">
-                    Project Alpha
-                  </h2>
-                  <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                    A robust backend system for e-commerce platforms, built with
-                    ASP.NET Core and C#.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-1 gap-3 rounded-lg border border-[#394060] bg-[#1d2030] p-4 flex-col"
-              >
-                <div
-                  class="text-white"
-                  data-icon="GithubLogo"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">
-                    Project Beta
-                  </h2>
-                  <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                    A microservices architecture project using Azure services
-                    for scalability and resilience.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-1 gap-3 rounded-lg border border-[#394060] bg-[#1d2030] p-4 flex-col"
-              >
-                <div
-                  class="text-white"
-                  data-icon="GithubLogo"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">
-                    Project Gamma
-                  </h2>
-                  <p class="text-[#99a0c2] text-sm font-normal leading-normal">
-                    A RESTful API project for a social media application,
-                    focusing on performance and security.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex px-4 py-3 justify-center">
+          </div>
+          <div class="flex px-4 py-3 justify-center">
+            <a rel="noopener" href="https://github.com/codestrap97a" target="_blank">
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#282d43] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-              >
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#282d43] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-[#282d43]">
                 <span class="truncate">More on GitHub</span>
               </button>
-            </div>
+            </a>
           </div>
         </div>
-        <button
-          id="scrollToTop"
-          class="fixed bottom-12 right-16 bg-[#282d43] text-white px-4 py-4 rounded-full shadow-lg hover:bg-white hover:text-[#282d43] border border-gray-500 hidden"
-        >
-          ↑
-        </button>
-        <footer class="flex justify-center" id="social">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer
-              class="flex flex-col gap-6 px-5 py-10 text-center @container"
-            >
-              <div class="flex flex-wrap justify-center gap-4">
-                <a href="#">
-                  <div
-                    class="text-[#99a0c2]"
-                    data-icon="TelegramLogo"
-                    data-size="24px"
-                    data-weight="regular"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path
-                        d="M236.88,26.19a9,9,0,0,0-9.16-1.57L25.06,103.93a14.22,14.22,0,0,0,2.43,27.21L80,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L173,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L239.77,35A9,9,0,0,0,236.88,26.19Zm-61.14,36L86.15,126.35l-49.6-9.73ZM96,200V152.52l24.79,21.74Zm87.53,8L100.85,135.5l119-85.29Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div
-                    class="text-[#99a0c2]"
-                    data-icon="InstagramLogo"
-                    data-size="24px"
-                    data-weight="regular"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div
-                    class="text-[#99a0c2]"
-                    data-icon="WhatsappLogo"
-                    data-size="24px"
-                    data-weight="regular"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path
-                        d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div
-                    class="text-[#99a0c2]"
-                    data-icon="Envelope"
-                    data-size="24px"
-                    data-weight="regular"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path
-                        d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div
-                    class="text-[#99a0c2]"
-                    data-icon="LinkedinLogo"
-                    data-size="24px"
-                    data-weight="regular"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path
-                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <p class="text-[#99a0c2] text-base font-normal leading-normal">
-                © 2020 Abolfazl Saberi. All rights reserved.
-              </p>
-            </footer>
-          </div>
-        </footer>
       </div>
+      <button id="scrollToTop"
+        class="fixed bottom-12 right-16 bg-[#282d43] text-white px-4 py-4 rounded-full shadow-lg hover:bg-white hover:text-[#282d43] border border-gray-500 hidden">
+        ↑
+      </button>
+      <footer class="flex justify-center" id="social">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="https://t.me/abolfazl_sbr97">
+                <div class="text-[#99a0c2] " data-icon="TelegramLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-[#0088cc]" width="29px" height="29px"
+                    fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M236.88,26.19a9,9,0,0,0-9.16-1.57L25.06,103.93a14.22,14.22,0,0,0,2.43,27.21L80,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L173,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L239.77,35A9,9,0,0,0,236.88,26.19Zm-61.14,36L86.15,126.35l-49.6-9.73ZM96,200V152.52l24.79,21.74Zm87.53,8L100.85,135.5l119-85.29Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="https://wa.me/qr/UGRZBNGHZTPQJ1" target="_blank" rel="noopener">
+                <div class="text-[#99a0c2]" data-icon="WhatsappLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-[#25d366]" width="29px" height="29px"
+                    fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+              <a href="mailto:saberi97.work@gmail.com?subject=Connection request" ">
+                  <div
+                    class=" text-[#99a0c2]" data-icon="Envelope" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-[#ea4335]" width="29px" height="29px"
+                  fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z">
+                  </path>
+                </svg>
+            </div>
+            </a>
+            <a href="https://www.linkedin.com/in/abolfazl-s-593524311" target="_blank" rel="noopener">
+              <div class="text-[#99a0c2]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-[#0077B5]" width="29px" height="29px"
+                  fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                  </path>
+                </svg>
+              </div>
+            </a>
+        </div>
+        <p class="text-[#99a0c2] text-base font-normal leading-normal">
+          © 2020 <span class="text-blue-500">Abolfazl Saberi</span>. All rights reserved.
+        </p>
+      </footer>
     </div>
-    <script>
-      window.addEventListener("scroll", function () {
-        const button = document.getElementById("scrollToTop");
-        const middleOfPage = document.documentElement.scrollHeight / 2;
+    </footer>
+  </div>
+  </div>
+  <script>
+    window.addEventListener("scroll", function () {
+      const button = document.getElementById("scrollToTop");
+      const middleOfPage = document.documentElement.scrollHeight / 2;
 
-        if (window.scrollY >= middleOfPage) {
-          button.classList.remove("hidden");
-        } else {
-          button.classList.add("hidden");
-        }
-      });
+      if (window.scrollY >= middleOfPage) {
+        button.classList.remove("hidden");
+      } else {
+        button.classList.add("hidden");
+      }
+    });
 
-      document
-        .getElementById("scrollToTop")
-        .addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
+    document
+      .getElementById("scrollToTop")
+      .addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
-    </script>
-  </body>
+      });
+  </script>
+</body>
+
 </html>
